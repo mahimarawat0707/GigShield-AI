@@ -1,10 +1,10 @@
-# 🛡 GigShield-AI
+# GigShield-AI
 
 AI-Powered Parametric Insurance Platform for Gig Delivery Workers 🚀
 
 ---
 
-## 📌 Problem Statement
+## Problem Statement
 
 Gig delivery workers depend on daily deliveries for their income.  
 However, external disruptions like **heavy rain, extreme heat, and air pollution** can suddenly stop deliveries.
@@ -16,7 +16,7 @@ This leads to:
 
 ---
 
-## 💡 Our Solution
+## Our Solution
 
 **GigShield-AI** is an AI-powered parametric insurance platform that protects gig workers from income loss.
 
@@ -24,11 +24,11 @@ This leads to:
 - System monitors **weather & pollution data**
 - When disruption occurs → **automatic payout triggered**
 
-No manual claim required ✅
+No manual claim required
 
 ---
 
-## 🎯 Target Users
+## Target Users
 
 - Swiggy / Zomato delivery partners  
 - Amazon / Flipkart delivery agents  
@@ -36,7 +36,7 @@ No manual claim required ✅
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
 1. Worker registers on platform  
 2. Enters work details (city, platform, income)  
@@ -48,7 +48,7 @@ No manual claim required ✅
 
 ---
 
-## 🧠 AI Features
+## AI Features
 
 - Risk prediction using historical data  
 - Smart premium calculation  
@@ -57,7 +57,7 @@ No manual claim required ✅
 
 ---
 
-## 🖥️ Tech Stack
+## Tech Stack
 
 **Frontend:**  
 - React.js  
@@ -83,7 +83,7 @@ No manual claim required ✅
 
 ---
 
-## 📱 Application Screens
+## Application Screens
 
 - Login / Signup  
 - Worker Onboarding  
@@ -94,23 +94,23 @@ No manual claim required ✅
 
 ---
 
-## 🧩 System Architecture
+## System Architecture
 
 User → Frontend → Backend → AI Engine → APIs → Payout System
 
 ---
 
-## 👥 Team Members
+## Team Members
 
-- 👩 **Mahima** – Project Manager  
-- 👨 **Daksh** – Frontend Developer  
-- 👩 **Prachi** – Backend Developer  
-- 👩 **Ananya** – AI/ML Developer  
-- 👨 **Gautam** – Research & Data Integration  
+ **Mahima** – Project Manager  
+ **Daksh** – Frontend Developer  
+ **Prachi** – Backend Developer  
+ **Ananya** – AI/ML Developer  
+ **Gautam** – Research & Data Integration  
 
 ---
 
-## 🚀 Future Scope
+##  Future Scope
 
 - Real payment integration  
 - Mobile app version  
@@ -119,12 +119,12 @@ User → Frontend → Backend → AI Engine → APIs → Payout System
 
 ---
 
-## 🌍 Impact
+##  Impact
 
 GigShield-AI creates a **financial safety net** for gig workers and ensures they are protected from unexpected income loss.
 
 ---
 
-## 📸 Demo
+##  Demo
 
 video link
