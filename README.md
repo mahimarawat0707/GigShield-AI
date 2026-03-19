@@ -127,4 +127,4 @@ GigShield-AI creates a **financial safety net** for gig workers and ensures they
 
 ##  Demo
 
-video link
+[video link](https://youtu.be/DUQ6oQWgZ7k?si=hNPdR-ljoNbJbhKP)
