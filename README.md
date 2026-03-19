@@ -125,6 +125,48 @@ GigShield-AI creates a **financial safety net** for gig workers and ensures they
 
 ---
 
+##  Adversarial Defense & Anti-Spoofing Strategy
+
+### 1. Differentiation
+
+Our system does not rely only on GPS location.
+
+We use multi-factor verification to differentiate between genuine users and fraudulent actors:
+
+- Real-time movement tracking (delivery routes vs static location)
+- App activity monitoring (order pickups, navigation usage)
+- Environmental consistency (weather data vs user behavior)
+- Device sensor data (motion, speed patterns)
+
+For example:
+A genuine worker will show movement patterns and delivery activity, while a spoofing user will appear static or inconsistent.
+
+### 2. Data Points Used for Fraud Detection
+
+To detect fraud, our system analyzes multiple data signals:
+
+- GPS + movement trajectory
+- Delivery platform activity (orders completed or not)
+- Device motion sensors (accelerometer, speed)
+- Network consistency (sudden location jumps)
+- Historical behavior patterns
+- Weather API correlation with location
+
+This multi-layer data analysis helps detect coordinated fraud attempts.
+
+### 3. UX Balance (Fairness for Genuine Users)
+
+We ensure that genuine users are not unfairly penalized:
+
+- Suspicious claims are marked as "Under Review" instead of rejected
+- Users are allowed to manually verify their activity
+- Grace thresholds are applied for network issues during bad weather
+- Only repeated suspicious patterns lead to claim blocking
+
+This ensures a balance between fraud prevention and user trust.
+
+---
+
 ##  Demo
 
 [video link](https://youtu.be/DUQ6oQWgZ7k?si=hNPdR-ljoNbJbhKP)
