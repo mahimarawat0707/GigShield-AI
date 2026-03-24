@@ -1,6 +1,6 @@
 # GigShield-AI
 
-AI-Powered Parametric Insurance Platform for Gig Delivery Workers 🚀
+AI-Powered Parametric Insurance Platform for Gig Delivery Workers 
 
 ---
 
