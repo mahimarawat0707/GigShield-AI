@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 
 function Dashboard() {
-  const [premium, setPremium] = useState(null);
+  const [premium, setPremium] = useState("");
   const [claim, setClaim] = useState("");
 
   const getPremium = async () => {
@@ -23,6 +23,7 @@ function Dashboard() {
   return (
     <div>
       <h2>Dashboard</h2>
+
       <button onClick={getPremium}>Check Premium</button>
       <p>Premium: {premium}</p>
 
