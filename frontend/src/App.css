@@ -1,32 +1,45 @@
 body {
   font-family: Arial;
-  background: linear-gradient(to right, #4facfe, #00f2fe);
+  background: linear-gradient(135deg, #667eea, #764ba2);
 }
 
 .container {
   width: 80%;
   margin: auto;
+  text-align: center;
 }
 
 .card {
-  background: white;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
   padding: 20px;
   margin: 20px;
-  border-radius: 10px;
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
 }
 
 input {
   display: block;
-  margin: 10px 0;
+  margin: 10px auto;
   padding: 10px;
-  width: 100%;
+  width: 80%;
+  border-radius: 10px;
+  border: none;
 }
 
 button {
-  padding: 10px;
-  margin: 5px;
-  background: #4facfe;
-  color: white;
+  padding: 10px 15px;
+  margin: 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
+  background: #ff7eb3;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
 }
