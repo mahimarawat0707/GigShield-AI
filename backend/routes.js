@@ -1,16 +1,15 @@
-const express = require("express");
-const router = express.Router();
-const User = require("./model");
 const axios = require("axios");
- route:router.post("/premium", async (req, res) => {
+🔥 Replace your /premium route:
+router.post("/premium", async (req, res) => {
   const { city } = req.body;
 
   try {
     const apiKey = "d9a299129e8dd813a1d6ed18518947fa";
 
     const weather = await axios.get(
-  `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
-);
+      https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}
+    );
+
     const rain = weather.data.rain ? weather.data.rain["1h"] || 0 : 0;
     const temp = weather.data.main.temp;
 
@@ -24,40 +23,66 @@ const axios = require("axios");
     res.json({ error: "API error" });
   }
 });
-// Register
-router.post("/register", async (req, res) => {
-  const user = new User(req.body);
-  await user.save();
-  res.json({ message: "User registered" });
-});
+// const express = require("express");
+// const router = express.Router();
+// const User = require("./model");
+// const axios = require("axios");
+//  route:router.post("/premium", async (req, res) => {
+//   const { city } = req.body;
 
-// Buy Plan
-router.post("/buy", async (req, res) => {
-  const { phone, plan } = req.body;
-  await User.updateOne({ phone }, { plan });
-  res.json({ message: "Plan activated" });
-});
+//   try {
+//     const apiKey = "d9a299129e8dd813a1d6ed18518947fa";
 
-// Premium
-router.post("/premium", (req, res) => {
-  const { rain, aqi } = req.body;
-  let premium = 40;
+//     const weather = await axios.get(
+//   `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
+// );
+//     const rain = weather.data.rain ? weather.data.rain["1h"] || 0 : 0;
+//     const temp = weather.data.main.temp;
 
-  if (rain > 50) premium += 10;
-  if (aqi > 300) premium += 5;
+//     let premium = 40;
 
-  res.json({ premium });
-});
+//     if (rain > 0) premium += 10;
+//     if (temp > 310) premium += 5;
 
-// Claim
-router.post("/claim", (req, res) => {
-  const { rain } = req.body;
+//     res.json({ premium, rain, temp });
+//   } catch (err) {
+//     res.json({ error: "API error" });
+//   }
+// });
+// // Register
+// router.post("/register", async (req, res) => {
+//   const user = new User(req.body);
+//   await user.save();
+//   res.json({ message: "User registered" });
+// });
 
-  if (rain > 50) {
-    return res.json({ status: "Approved", amount: 450 });
-  }
+// // Buy Plan
+// router.post("/buy", async (req, res) => {
+//   const { phone, plan } = req.body;
+//   await User.updateOne({ phone }, { plan });
+//   res.json({ message: "Plan activated" });
+// });
 
-  res.json({ status: "No Claim" });
-});
+// // Premium
+// router.post("/premium", (req, res) => {
+//   const { rain, aqi } = req.body;
+//   let premium = 40;
 
-module.exports = router;
+//   if (rain > 50) premium += 10;
+//   if (aqi > 300) premium += 5;
+
+//   res.json({ premium });
+// });
+
+// // Claim
+// router.post("/claim", (req, res) => {
+//   const { rain } = req.body;
+
+//   if (rain > 50) {
+//     return res.json({ status: "Approved", amount: 450 });
+//   }
+
+//   res.json({ status: "No Claim" });
+// });
+
+// module.exports = router;
