@@ -1,5 +1,5 @@
 const axios = require("axios");
-🔥 Replace your /premium route:
+route:
 router.post("/premium", async (req, res) => {
   const { city } = req.body;
 
@@ -7,8 +7,8 @@ router.post("/premium", async (req, res) => {
     const apiKey = "d9a299129e8dd813a1d6ed18518947fa";
 
     const weather = await axios.get(
-      https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}
-    );
+  `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
+);
 
     const rain = weather.data.rain ? weather.data.rain["1h"] || 0 : 0;
     const temp = weather.data.main.temp;
