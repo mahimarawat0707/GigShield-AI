@@ -7,17 +7,17 @@ import Dashboard from "./components/Dashboard";
 function App() {
   return (
     <div className="container">
-      <h1>GigShield AI 🚀</h1>
+      <h1>GigShield AI</h1>
 
-      <div className="card">
+      <div className="card register">
         <Register />
       </div>
 
-      <div className="card">
+      <div className="card plans">
         <Plans />
       </div>
 
-      <div className="card">
+      <div className="card dashboard">
         <Dashboard />
       </div>
     </div>

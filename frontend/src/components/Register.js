@@ -5,8 +5,13 @@ function Register() {
   const [form, setForm] = useState({});
 
   const submit = async () => {
-    await axios.post("http://localhost:5000/register", form);
-    alert("Registered ✅");
+    try {
+      await axios.post("http://localhost:5000/register", form);
+      alert("Registered ✅");
+    } catch (err) {
+      console.log(err);
+      alert("Error registering ❌");
+    }
   };
 
   return (

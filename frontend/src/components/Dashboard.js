@@ -14,8 +14,8 @@ function Dashboard() {
   };
 
   const getClaim = async () => {
-    const res = await axios.post("http://localhost:5000/claim", {
-      rain: 60
+    const res = await axios.post("http://localhost:5000/premium", {
+      city: "Delhi"
     });
     setClaim(res.data.status + " ₹" + (res.data.amount || 0));
   };
